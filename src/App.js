@@ -10,11 +10,11 @@ const urlToMyGithub = 'https://github.com/KevinQueiroz';
 const App = () => {
 
     const handlePressGoToGithub = async ()=>{
-        console.log('Verificando Link');
+        console.log('Verificando Link...');
         const res = await Linking.canOpenURL(urlToMyGithub);
         if (res){
             console.log('Link Aprovado');
-            console.log('Abrindo Link');
+            console.log('Abrindo Link...');
             await Linking.openURL(urlToMyGithub);
         }
     }
